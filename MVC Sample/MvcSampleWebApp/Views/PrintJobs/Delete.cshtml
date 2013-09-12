@@ -1,0 +1,74 @@
+﻿@model MvcSampleWebApp.Models.PrintJob
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>PrintJob</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AffiliateID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AffiliateID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerAddress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerAddress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerCity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerCity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerState)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerState)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerZip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerZip)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.JobSubmitDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JobSubmitDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.JobEstCompleteDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JobEstCompleteDate)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
